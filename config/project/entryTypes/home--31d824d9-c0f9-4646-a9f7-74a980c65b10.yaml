@@ -55,8 +55,50 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Content
+        name: Hero
         uid: b22795ce-d43e-462e-b46b-7465194dd5ba
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f964a032-555a-401e-99df-fbbe1aff6d16 # Slider Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7859fac1-757e-412a-ba5e-3499a8a6d701
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 80118ba7-6f10-4eec-b489-5f775d7f82bb # Slider Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20e63bf3-15b5-45c3-8d39-b48692430dbb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 560bd468-1d66-4847-bfb7-7f59d24e7aaa # Slider Images
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ee19bf47-dad4-4796-8997-4b856aadf812
+            userCondition: null
+            warning: null
+            width: 100
+        name: Slider
+        uid: 08355518-dc37-47f4-813b-d52ce507eed7
         userCondition: null
 handle: home
 hasTitleField: false

@@ -18,15 +18,29 @@
 
         <div class="featured-work__content">
 
-          <h2>Our Work</h2>
+          <h2>{{ entry.sliderTitle }}</h2>
           
-          <p>Here you will find examples of campaigns and assets that have helped our clients adapt their brand, connect with new customers, and grow market share.</p>
+          <p>{{ entry.sliderDescription }}</p>
 
           
           <!-- Slider Component -->
           <div class="slider-container">
             
             <div class="slider__reel">
+              {#
+              {% for block in entry.sliderImages %}
+
+                {% if block == 'slide' %}
+                    {% set image = entry.slideImage.one() %}
+                      <img src="{{ image.url }}" alt="{{ image.title }}" class="slider__image">
+                {% endif %}
+
+              {% endfor %}
+              #}
+
+
+              
+              
               <img src="{{ siteUrl }}assets/images/photos/Platinum.jpg" alt="Ridge" class="slider__image">
               <img src="{{ siteUrl }}assets/images/photos/Signtech.jpg" alt="Ridge" class="slider__image">
               <img src="{{ siteUrl }}assets/images/photos/CBHB.jpg" alt="Ridge" class="slider__image">

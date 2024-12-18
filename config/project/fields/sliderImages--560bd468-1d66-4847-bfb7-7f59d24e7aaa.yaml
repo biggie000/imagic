@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 46590a8c-c519-4611-a669-d23b84066f7d # Homepage
+handle: sliderImages
+instructions: 'Add images for the slider'
+name: 'Slider Images'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_sliderimages}}'
+  maxBlocks: null
+  minBlocks: 2
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
