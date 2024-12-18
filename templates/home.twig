@@ -1,0 +1,74 @@
+{% extends "index" %}
+
+{% block content%}
+
+
+  {% set image = entry.heroBackgroundImage.one() %}
+    {# <section class="hero" style="background-image: url('{{ image.url }}')"> #}
+    <section class="hero" style="background-image: url('{{ siteUrl }}assets/images/photos/hero.jpg')">
+      <div class="hero__content content-column">
+
+        <h1>{{ entry.heroTitle }}</h1>
+        
+      </div>
+    </section>
+
+    <section class="featured-work" id="featured-work">
+      <div class="featured-work__flex content-column">
+
+        <div class="featured-work__content">
+
+          <h2>Our Work</h2>
+          
+          <p>Here you will find examples of campaigns and assets that have helped our clients adapt their brand, connect with new customers, and grow market share.</p>
+
+          
+          <!-- Slider Component -->
+          <div class="slider-container">
+            
+            <div class="slider__reel">
+              <img src="{{ siteUrl }}assets/images/photos/Platinum.jpg" alt="Ridge" class="slider__image">
+              <img src="{{ siteUrl }}assets/images/photos/Signtech.jpg" alt="Ridge" class="slider__image">
+              <img src="{{ siteUrl }}assets/images/photos/CBHB.jpg" alt="Ridge" class="slider__image">
+              <img src="{{ siteUrl }}assets/images/photos/Faringdon.jpg" alt="Ridge" class="slider__image">
+            </div>
+          
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- <section class="section section--more-padding section--light section--angled-top">
+      <div class="content-column centered">
+
+        <h2>Meet the Riders</h2>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        
+        <div class="flex-columns">
+
+          <div class="flex-columns__item">
+            <img src="{{ siteUrl }}assets/images/photos/henry-potter.jpg" alt="Henry Potter" class="flex-columns__image">
+            <h4>Henry Potter</h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+          </div>
+
+          <div class="flex-columns__item">
+            <img src="{{ siteUrl }}assets/images/photos/sarah-bradbury.jpg" alt="Sarah Bradbury" class="flex-columns__image">
+            <h4>Sarah Bradbury</h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+          </div>
+
+          <div class="flex-columns__item">
+            <img src="{{ siteUrl }}assets/images/photos/jack-starfield.jpg" alt="Jack Starfield" class="flex-columns__image">
+            <h4>Jack Starfield</h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section> -->
+    
+{% endblock %}

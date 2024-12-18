@@ -1,0 +1,38 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 46590a8c-c519-4611-a669-d23b84066f7d # Homepage
+handle: heroBackgroundImage
+instructions: 'Add a background image'
+name: 'Hero Background Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:900eeaf1-e8d6-4bbb-b041-5d9b349c082c' # Uploads
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:900eeaf1-e8d6-4bbb-b041-5d9b349c082c' # Uploads
+  restrictedLocationSubpath: null
+  selectionLabel: 'Upload a background image'
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:900eeaf1-e8d6-4bbb-b041-5d9b349c082c' # Uploads
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

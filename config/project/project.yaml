@@ -1,0 +1,37 @@
+dateModified: 1734479968
+email:
+  fromEmail: sheldonsaviodsouza@gmail.com
+  fromName: 'Imagic Ddev'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: $ASSET_BASE_PATH
+    type: craft\fs\Local
+    url: $ASSET_BASE_URL
+meta:
+  __names__:
+    2bd45805-6b4f-44e5-abbe-e7b9d9486620: 'Hero Background Image' # Hero Background Image
+    10cd244d-1065-43ca-aee5-e227035c5887: 'Imagic Ddev' # Imagic Ddev
+    31d824d9-c0f9-4646-a9f7-74a980c65b10: Home # Home
+    39e1dd42-9eef-4108-943a-51fff33e2466: 'Public Schema' # Public Schema
+    46c72423-2c0a-4880-a5c7-41c47ed4a2bd: Common # Common
+    85be3886-0974-4da8-9546-cd3b8dad0110: 'Imagic Ddev' # Imagic Ddev
+    900eeaf1-e8d6-4bbb-b041-5d9b349c082c: Uploads # Uploads
+    46590a8c-c519-4611-a669-d23b84066f7d: Homepage # Homepage
+    a79e18ee-bb78-4568-be9c-24ed22fc3be1: 'Hero Title' # Hero Title
+    fec291cf-9bbc-46ad-b520-97b67bbcc7e9: Home # Home
+system:
+  edition: solo
+  live: true
+  name: 'Imagic Ddev'
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-NZ
+name: 'Imagic Ddev'
+primary: true
+siteGroup: 85be3886-0974-4da8-9546-cd3b8dad0110 # Imagic Ddev
+sortOrder: 1

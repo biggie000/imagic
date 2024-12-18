@@ -1,0 +1,71 @@
+fieldLayouts:
+  5572c205-cf50-45ec-a86d-fda8d17dbc5d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 912d5ff8-1bdd-4d9d-9f0f-73d87cbeaffb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a79e18ee-bb78-4568-be9c-24ed22fc3be1 # Hero Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 46968876-4e79-4e7d-aeee-29c3a38262f9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2bd45805-6b4f-44e5-abbe-e7b9d9486620 # Hero Background Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8009fea4-24bf-420c-8893-a6635528c300
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b22795ce-d43e-462e-b46b-7465194dd5ba
+        userCondition: null
+handle: home
+hasTitleField: false
+name: Home
+section: fec291cf-9bbc-46ad-b520-97b67bbcc7e9 # Home
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
