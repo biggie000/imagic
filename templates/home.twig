@@ -4,47 +4,39 @@
 
 
   {% set image = entry.heroBackgroundImage.one() %}
-    {# <section class="hero" style="background-image: url('{{ image.url }}')"> #}
-    <section class="hero" style="background-image: url('{{ siteUrl }}assets/images/photos/hero.jpg')">
-      <div class="hero__content content-column">
+    <section class="hero" style="background-image: url('{{ image.url }}')">
+      <div class="flex items-center">
 
-        <h1>{{ entry.heroTitle }}</h1>
+        <h1 class="text-8xl font-black max-w-6xl pt-80px max-[680px]:text-5xl p-2 top-0.5">{{ entry.heroTitle }}</h1>
         
       </div>
     </section>
 
-    <section class="featured-work" id="featured-work">
-      <div class="featured-work__flex content-column">
+    <section class="pt-2" id="featured-work">
+      <div class="container mx-auto">
 
-        <div class="featured-work__content">
+        <div class="mx-auto py-8 text-center">
 
-          <h2>{{ entry.sliderTitle }}</h2>
+          <h2 class="text-4xl font-bold py-2 max-[680px]:text-3xl">{{ entry.sliderTitle }}</h2>
           
-          <p>{{ entry.sliderDescription }}</p>
+          <p class="pb-4 max-w-4xl mx-auto">{{ entry.sliderDescription }}</p>
 
           
           <!-- Slider Component -->
-          <div class="slider-container">
+          <div class="max-w-5xl mx-auto overflow-hidden">
             
+             
             <div class="slider__reel">
-              {#
-              {% for block in entry.sliderImages %}
+              {% set blocks = entry.sliderImages.all() %}
+                {% for block in blocks %}
 
-                {% if block == 'slide' %}
-                    {% set image = entry.slideImage.one() %}
-                      <img src="{{ image.url }}" alt="{{ image.title }}" class="slider__image">
-                {% endif %}
+                  {% if block.type == 'slide' %}
+                      {% set image = block.slideImage.one() %}
+                        <img src="{{ image.url }}" alt="{{ image.title }}" class="slider__image">
+                  {% endif %}
 
-              {% endfor %}
-              #}
+                {% endfor %}
 
-
-              
-              
-              <img src="{{ siteUrl }}assets/images/photos/Platinum.jpg" alt="Ridge" class="slider__image">
-              <img src="{{ siteUrl }}assets/images/photos/Signtech.jpg" alt="Ridge" class="slider__image">
-              <img src="{{ siteUrl }}assets/images/photos/CBHB.jpg" alt="Ridge" class="slider__image">
-              <img src="{{ siteUrl }}assets/images/photos/Faringdon.jpg" alt="Ridge" class="slider__image">
             </div>
           
           </div>
@@ -53,36 +45,5 @@
         
       </div>
     </section>
-
-    <!-- <section class="section section--more-padding section--light section--angled-top">
-      <div class="content-column centered">
-
-        <h2>Meet the Riders</h2>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        
-        <div class="flex-columns">
-
-          <div class="flex-columns__item">
-            <img src="{{ siteUrl }}assets/images/photos/henry-potter.jpg" alt="Henry Potter" class="flex-columns__image">
-            <h4>Henry Potter</h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-          </div>
-
-          <div class="flex-columns__item">
-            <img src="{{ siteUrl }}assets/images/photos/sarah-bradbury.jpg" alt="Sarah Bradbury" class="flex-columns__image">
-            <h4>Sarah Bradbury</h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-          </div>
-
-          <div class="flex-columns__item">
-            <img src="{{ siteUrl }}assets/images/photos/jack-starfield.jpg" alt="Jack Starfield" class="flex-columns__image">
-            <h4>Jack Starfield</h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-          </div>
-          
-        </div>
-        
-      </div>
-    </section> -->
     
 {% endblock %}

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --white: #FFFFFF;
     --gold: #FFF;
@@ -52,7 +56,7 @@ body:before {
 
 body.inner-page {
     background-color: var(--almost-black);
-    background: url('../images/map-bg--dark.jpg') center center no-repeat;
+    background: center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -189,7 +193,7 @@ figure {
     width: 18px;
     height: 12px;
     display: inline-block;
-    background: url('../images/arrow.svg') 0 0 no-repeat;
+    background: 0 0 no-repeat;
     transition: transform .12s ease;
 }
 
@@ -281,9 +285,6 @@ figure {
 
 .hero h1 {
     z-index: 20;
-    max-width: 1080px;
-    font-size: 6em;
-    padding-top: 80px;
     line-height: 1.2;
     font-weight: 900;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -308,11 +309,11 @@ figure {
         min-height: 70vh;
     }
 
-    .hero h1 {
-        top: 0.5em;
-        max-width: 400px;
-        font-size: 2.8em;
-    }
+    // .hero h1 {
+    //     top: 0.5em;
+    //     max-width: 400px;
+    //     font-size: 2.8em;
+    // }
 
     .nav {
         position: absolute;
@@ -391,7 +392,7 @@ article.section {
 .section--light {
     color: var(--true-black);
     background-color: var(--tan);
-    background: url('../images/map-bg--light.jpg') center top no-repeat;
+    background: center top no-repeat;
     background-size: cover;
 }
 
@@ -402,30 +403,11 @@ article.section {
     color: var(--black);
 }
 
-.featured-work__content {
-    padding: 2em 0;
-}
-
-.featured-work__content h2 {
-    text-align: center;
-    font-size: 4em;
-}
-
-.featured-work__content p {
-    text-align: center;
-}
-
-.slider-container {
-    max-width: 1080px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
 
 @media screen and (max-width: 680px) {
-    .featured-work__content h2 {
-        font-size: 2.5em;
-    }
+    // .featured-work__content h2 {
+    //     font-size: 2.5em;
+    // }
 }
 
 @media screen and (max-width: 480px) {

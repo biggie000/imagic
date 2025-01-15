@@ -1,5 +1,46 @@
 {
+  "name": "hierarchy24",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
   "dependencies": {
+    "@lottiefiles/lottie-player": "^2.0.12",
+    "@types/jquery": "^2.0.57",
+    "autosize": "^4.0.2",
+    "gsap": "3.8.0",
+    "jquery": "^3.6.0",
+    "jquery-ui": "^1.13.0",
+    "jquery-visible": "^1.2.0",
+    "jquery.cookie": "^1.4.1",
+    "lazysizes": "^5.2.2",
+    "lenis": "^1.1.14",
+    "lottie-web": "^5.12.2",
+    "rfs": "^9.0.3",
+    "scroll-out": "^2.2.12",
     "slick-carousel": "^1.8.1"
-  }
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.18",
+    "postcss": "^8.3.0",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.32.11",
+    "sass-loader": "^11.0.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "tailwindcss": "^3.4.4"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000 --stats-children",
+    "hot": "mix watch --hot",
+    "production": "mix --production"
+  },
+  "author": "",
+  "license": "ISC"
 }

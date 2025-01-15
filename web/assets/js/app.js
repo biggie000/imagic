@@ -1,3 +1,5 @@
+import $ from "jquery";
+import "slick-carousel";
 
 // Navigation
 const navToggle = document.querySelector(".nav-toggle");

@@ -1,4 +1,4 @@
-dateModified: 1734545746
+dateModified: 1736936829
 email:
   fromEmail: sheldonsaviodsouza@gmail.com
   fromName: 'Imagic Ddev'
@@ -8,9 +8,9 @@ fs:
     hasUrls: true
     name: Uploads
     settings:
-      path: $ASSET_BASE_PATH
+      path: '@webroot/assets'
     type: craft\fs\Local
-    url: $ASSET_BASE_URL
+    url: /assets
 meta:
   __names__:
     2bd45805-6b4f-44e5-abbe-e7b9d9486620: 'Hero Background Image' # Hero Background Image
